@@ -11,6 +11,7 @@ NPC = 'DAD'
 program_state = 'START'
 
 p5.imageMode(p5.CENTER)
+p5.textAlign(p5.CENTER)
 
 AnomolyImg = p5.loadImage('Anomoly.png');
 BadendImg = p5.loadImage('Badend.png');
@@ -66,79 +67,79 @@ def draw():
     
     if(program_state == 'START'):
         p5.image(StartImg, 150, 150)
-        p5.text('CLICK TO START', 20, 280)
-        p5.text('Hmm...I love boba tea...', 80, 20)
+        p5.text('CLICK TO START', 150, 280)
+        p5.text('Hmm...I love boba tea...', 150, 20)
     elif(program_state == 'S01'):
         p5.image(StartImg, 150, 150)
-        p5.text('VOICE: How’s your drink?', 20, 280)
+        p5.text('VOICE: How’s your drink?', 150, 280)
     elif(program_state == 'S01C'):
         p5.image(StartImg, 150, 150)
         p5.image(S01C, 150, 150)
     elif(program_state == 'S02'):
         p5.image(DadImg, 150, 150)
-        p5.text('DAD: Mine’s too sweet to my liking.', 20, 280)
+        p5.text('DAD: Mine’s too sweet to my liking.', 150, 280)
     elif(program_state == 'S02C'):
         p5.image(DadImg, 150, 150)
         p5.image(S02C, 150, 150)
     elif(program_state == 'S03'):
         p5.image(LabelImg, 150, 150)
-        p5.text('[Can’t See Clearly]', 20, 280)
+        p5.text('[Can’t See Clearly]', 150, 280)
     elif(program_state == 'S04'):
         p5.image(DadImg, 150, 150)
-        p5.text('DAD:They didnt ask me?', 20, 280)
+        p5.text('DAD:They didnt ask me?', 150, 280)
     elif(program_state == 'S05'):
         p5.image(DadImg, 150, 150)
-        p5.text('DAD: Lets go pick up your sister.', 20, 280)
+        p5.text('DAD: Lets go pick up your sister.', 150, 280)
     elif(program_state == 'S05C'):
         p5.image(DadImg, 150, 150)
         p5.image(S05C, 150, 150)
     elif(program_state == 'S06'):
         p5.image(WatchImg, 150, 150)
-        p5.text('[Can’t See Clearly]', 20, 280)
+        p5.text('[Can’t See Clearly]', 150, 280)
     elif(program_state == 'S07'):
         p5.image(RoadImg, 150, 150)
-        p5.text('Drive slower...', 20, 280)
+        p5.text('Drive slower...', 150, 280)
     elif(program_state == 'S08'):
         p5.image(DrivingImg, 150, 150)
-        p5.text('Whats that on the road?', 20, 280)
+        p5.text('Whats that on the road?', 150, 280)
     elif(program_state == 'S08C'):
         p5.image(AnomolyImg, 150, 150)
         p5.image(S08C, 150, 150)
     elif(program_state == 'S09'):
         p5.image(ZombiesImg, 150, 150)
-        p5.text('Wait...is that...ZOMBIES...!?', 20, 280)
+        p5.text('Wait...is that...ZOMBIES...!?', 150, 280)
     elif(program_state == 'S10'):
         p5.image(EncounterImg, 150, 150)
-        p5.text('We have to run!', 20, 280)
+        p5.text('We have to run!', 150, 280)
     elif(program_state == 'S11'):
         p5.image(WoodsImg, 150, 150)
-        p5.text('Into the woods...!', 20, 280)
+        p5.text('Into the woods...!', 150, 280)
     elif(program_state == 'S12'):
         p5.image(Zombies2Img, 150, 150)
-        p5.text('They are catching up!', 20, 280)
+        p5.text('They are catching up!', 150, 280)
     elif(program_state == 'BE'):
         p5.image(BadendImg, 150, 150)
     elif(program_state == 'S13'):
         p5.image(CowImg, 150, 150)
-        p5.text('Do you know why does a cow have four stomachs?', 20, 280)
+        p5.text('Do you know why does a cow have four stomachs?', 150, 280)
     elif(program_state == 'S14'):
         p5.image(QuestionsImg, 150, 150)
-        p5.text('I remember the teacher talking about this in lecture...', 20, 280)
+        p5.text('I remember the teacher talking about this in lecture...', 150, 280)
     elif(program_state == 'S14C'):
         p5.image(QuestionsImg, 150, 150)
         p5.image(S14C, 150, 150) 
     elif(program_state == 'S15'):
         p5.image(ExamImg, 150, 150)
-        p5.text('Its approaching the time limit for the exam....', 20, 280)
+        p5.text('Its approaching the time limit for the exam....', 150, 280)
     elif(program_state == 'S16'):
         p5.image(ExamImg, 150, 150)
-        p5.text('And I didn’t write a word...', 20, 280)
+        p5.text('And I didn’t write a word...', 150, 280)
     elif(program_state == 'S17'):
         p5.image(ExamImg, 150, 150)
-        p5.text('WHAT WOULD I DO NOW?', 20, 280)
+        p5.text('WHAT WOULD I DO NOW?', 150, 280)
     elif(program_state == 'S18'):
         p5.image(ExamImg, 150, 150)
-        p5.text('[Look at Classroom]', 20, 280)
+        p5.text('[Look at Classroom]', 150, 280)
     elif(program_state == 'S18C'):
         p5.image(ExamImg, 150, 150)
         p5.image(S18CF, 150, 150)
@@ -146,51 +147,53 @@ def draw():
             p5.image(S18CT, 150, 150)
     elif(program_state == 'S19'):
         p5.image(RepeatImg, 150, 150)
-        p5.text('[Look at Menu]', 20, 280)
+        p5.text('[Look at Menu]', 150, 280)
     elif(program_state == 'Wakingup'):
         p5.image(WakingupImg, 150, 150)
     elif(program_state == 'S20'):
         p5.image(QuestionsImg, 150, 150)
-        p5.text('Can’t see clearly...', 20, 280)
+        p5.text('Can’t see clearly...', 150, 280)
     elif(program_state == 'S21'):
         p5.image(RoadImg, 150, 150)
-        p5.text('Are you ready for the exam?', 15, 260)
+        p5.text('Are you ready for the exam?', 150, 260)
     elif(program_state == 'S21C'):
         p5.image(RoadImg, 150, 150)
         p5.image(S21C, 150, 150)
     elif(program_state == 'S22'):
         p5.image(LynnImg, 150, 150)
-        p5.text('LYNN: What do you have?', 15, 260)
+        p5.text('LYNN: What do you have?', 150, 260)
     elif(program_state == 'S22C'):
         p5.image(LynnImg, 150, 150)
         p5.image(S22C, 150, 150)
     elif(program_state == 'S23'):
         p5.image(LynnImg, 150, 150)
-        p5.text('LYNN: Noon break is almost up, we should go back to the classroom.', 15, 260)
+        p5.text('LYNN: Noon break is almost up.', 150, 250)
+        p5.text('We should go back to the classroom.', 150, 270)
     elif(program_state == 'S23C'):
         p5.image(RoadImg, 150, 150)
         p5.image(S23C, 150, 150)
     elif(program_state == 'S24'):
         p5.image(LabelImg, 150, 150)
-        p5.text('[Can’t Read Clearly]', 15, 260)
+        p5.text('[Can’t Read Clearly]', 150, 260)
     elif(program_state == 'S25'):
         p5.image(WatchImg, 150, 150)
-        p5.text('Can’t read clearly...', 15, 260)
+        p5.text('Can’t read clearly...', 150, 260)
     elif(program_state == 'S26'):
         p5.image(RoadImg, 150, 150)
-        p5.text('what do you say we skip class today?', 15, 260)
+        p5.text('what do you say we skip class today?', 150, 260)
     elif(program_state == 'wakingup01'):
         p5.image(wakingup01Img, 150, 150)
     elif(program_state == 'wakingup02'):
         p5.image(wakingup02Img, 150, 150)
     elif(program_state == 'wakingup03'):
         p5.image(wakingup03Img, 150, 150)
-        p5.text('What a dream...', 15, 260)
+        p5.text('What a dream...', 150, 260)
     elif(program_state == 'HE'):
         p5.image(HEImg, 150, 150)
-        p5.text('Congratulation!', 15, 260)
-        p5.text('You have successfully wake up from the endless nightmare.', 15, 260)
-        p5.text('Click to restart.', 15, 260)
+        p5.text('Congratulation!', 150, 150)
+        p5.text('You have successfully woken up', 150, 250)
+        p5.text('from the endless nightmare.', 150, 270)
+        p5.text('Click to restart.', 150, 50)
         
 
 def keyPressed(event):
