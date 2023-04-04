@@ -57,7 +57,6 @@ HEImg = p5.loadImage('HE.png');
 
 def setup():
     p5.createCanvas(300, 300) 
-    print('finished setup') 
     
 def draw():
     global Time_is_checked
