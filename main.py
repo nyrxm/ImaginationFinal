@@ -6,6 +6,11 @@ Label_is_read = False
 Paper_is_checked = False
 Realise_No_Exam = False
 
+print('This is the Final Project for Neuroscience of Imagination SP23')
+print('This project aims to explore the experience of recurring dreams, and to investigate the potential treatment.')
+print('Thankyou for playing!')
+print('Joann Xu')
+
 NPC = 'DAD:'
 
 program_state = 'START'
@@ -369,6 +374,3 @@ def mouseReleased(event):
         Realise_No_Exam = False
     elif(program_state == 'HE'):
         program_state = 'START'
-        
-
-
